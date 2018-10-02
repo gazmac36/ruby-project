@@ -1,0 +1,9 @@
+<h1>Delete <%= @service_user.name %>?</h1>
+
+<form class="" action="/service_user/<%= @service_user.id %>/delete" method="post">
+  <input type="submit" name="submit" value="Yes">
+</form>
+
+<form class="" action="/service_user/<%= @service_user.id %>" method="get">
+  <input type="submit" name="submit" value="No">
+</form>

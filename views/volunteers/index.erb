@@ -1,0 +1,13 @@
+<h1>Volunteers</h1>
+
+<table>
+  <% for volunteer in @volunteers %>
+  <tr>
+    <td><a href="/volunteer/<%= volunteer.id %>"><%= volunteer.name %></a></td>
+  </tr>
+  <% end %>
+</table>
+
+<form class="" action="/volunteer/new" method="get">
+  <input type="submit" name="submit" value="NEW">
+</form>

@@ -1,0 +1,33 @@
+<h1>Edit Befriending</h1>
+
+<form class="edit-befriending" action="/befriending/<%= @befriending.id %>" method="post">
+
+<label for="service-user-select">Service User</label>
+<br>
+<select name="service_user_id" id="service_user_select">
+ <% for service_user in @service_users %>
+ <option value="<%=service_user.id%>"><%'selected' if @befriending.service_user.id == service_user.id %><%=service_user.name%></option>
+ <% end %>
+</select>
+<br>
+
+<label for="volunteer-select">Volunteer</label>
+<br>
+<select name="volunteer_id" id="volunteer_select">
+ <% for volunteer in @volunteers %>
+ <option value="<%=volunteer.id%>"><%'selected' if @befriending.volunteer.id == volunteer.id %><%=volunteer.name%></option>
+ <% end %>
+</select>
+<br>
+<label for="location">Location</label>
+<br>
+<textarea name="location" maxlength="255" rows="10" cols="35" required>
+<%= @befriending.location %>
+</textarea>
+<br>
+<input type="submit" name="submit" value="CONFIRM">
+</form>
+
+<form class="" action="/befriending/<%= @befriending.id %>" method="get">
+<input type="submit" name="submit" value="CANCEL">
+</form>

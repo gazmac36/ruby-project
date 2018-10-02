@@ -1,0 +1,13 @@
+<h1>Service Users</h1>
+
+<table>
+  <% for service_user in @service_users %>
+  <tr>
+    <td><a href="/service_user/<%= service_user.id %>"><%= service_user.name %></a></td>
+  </tr>
+  <% end %>
+</table>
+
+<form class="" action="/service_user/new" method="get">
+  <input type="submit" name="submit" value="NEW">
+</form>

@@ -1,0 +1,27 @@
+<h1>Befriending</h1>
+
+<table>
+  <tr>
+    <th>Volunteer</th>
+    <td><%= @befriending.volunteer.name %></a></td>
+  </tr>
+  <tr>
+    <th>Service User</th>
+    <td><%= @befriending.service_user.name %></a></td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td><%= @befriending.location %></td>
+  </tr>
+  <tr>
+</table>
+
+<div class="button">
+<form class="" action="/befriending/<%= @befriending.id %>/edit" method="get">
+  <input type="submit" name="submit" value="EDIT">
+</form>
+
+<form class="" action="/befriending/<%= @befriending.id %>/check_delete" method="get">
+  <input type="submit" name="submit" value="DELETE">
+</form>
+</div>

@@ -1,0 +1,73 @@
+<h1>Edit <%= @service_user.name %></h1>
+
+<form class="" action="/service_user/<%= @service_user.id %>" method="post">
+
+  <label for="name"></label>
+  <input id="full-name" type="text" name="name" value="<%= @service_user.name %>" required>
+<br>
+  <label for="age"></label>
+  <input id="age" type="text" name="age" value="<%= @service_user.age %>" required>
+<br>
+  <label for="address-line-1"></label>
+  <input id="address-line-1" type="text" name="address_line1" value="<%= @service_user.address_line1 %>" required>
+<br>
+  <label for="address-line-2"></label>
+  <input id="address-line-2" type="text" name="address_line2" value="<%= @service_user.address_line2 %>">
+<br>
+  <label for="address-town"></label>
+  <input id="address-town" type="text" name="address_town" value="<%= @service_user.address_town %>" required>
+<br>
+  <label for="address-county"></label>
+  <input id="address-county" type="text" name="address_county" value="<%= @service_user.address_county %>" required>
+<br>
+  <label for="address-postcode"></label>
+  <input id="address-postcode" type="text" name="address_postcode" value="<%= @service_user.address_postcode %>" required>
+<br>
+  <label for="contact-phone"></label>
+  <input id="contact-phone" type="text" name="contact_phone" value="<%= @service_user.contact_phone %>" required>
+<br>
+  <label for="contact-email"></label>
+  <input id="contact-email" type="text" name="contact_email" value="<%= @service_user.contact_email %>" required>
+<br>
+
+<div class="checkboxes">
+<input type="checkbox" name="Addiction" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Addiction" %><% end %>/>
+<label for="Addiction">Addiction</label>
+
+<input type="checkbox" name="Carers" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Carers" %><% end %>/>
+<label for="Carers">Carers</label>
+
+<input type="checkbox" name="Elderly" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Elderly" %><% end %>/>
+<label for="Elderly">Elderly</label>
+
+<input type="checkbox" name="Ethnic Minorities" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Ethnic Minorities" %><% end %>/>
+<label for="Ethnic Minorities">Ethnic Minorities</label>
+
+<input type="checkbox" name="Gender/Sexuality" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Gender/Sexuality" %><% end %>/>
+<label for="Gender/Sexuality">Gender/Sexuality</label>
+
+<input type="checkbox" name="Homelessness" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Homelessness" %><% end %>/>
+<label for="Homelessness">Homelessness</label>
+
+<input type="checkbox" name="Learning Disability" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Learning Disability" %><% end %>/>
+<label for="Learning Disability">Learning Disability</label>
+
+<input type="checkbox" name="Mental Health" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Mental Health" %><% end %>/>
+<label for="Mental Health">Mental Health</label>
+
+<input type="checkbox" name="Physical Disability" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Physical Disability" %><% end %>/>
+<label for="Physical Disability">Physical Disability</label>
+
+<input type="checkbox" name="Refugees/Asylum Seekers" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Refugees/Asylum Seekers" %><% end %>/>
+<label for="Refugees/Asylum Seekers">Refugees/Asylum Seekers</label>
+
+<input type="checkbox" name="Sensory Impairment" value=""<% for category in @service_user.categories %> <%= 'checked' if category.name == "Sensory Impairment" %><% end %>/>
+<label for="Sensory Impairment">Sensory Impairment</label>
+</div>
+
+<input type="submit" name="submit" value="CONFIRM">
+</form>
+
+<form class="" action="/service_user/<%= @service_user.id %>" method="get">
+<input type="submit" name="submit" value="CANCEL">
+</form>

@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 60%;
+  min-height: 960px;
+  margin: 0 auto;
+  background-color: white;
+  border-left: 1px solid #C7ECFF;
+  border-right: 1px solid #C7ECFF;
+  overflow: hidden;
+}
+
+body {
+  font-family: Geneva, helvetica;
+  background-color: lightgrey;
+}
+
+#navbar {
+	padding: 30px 0 10px;
+}
+
+#navbar ul {
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  list-style-type: none;
+}
+
+#navbar li {
+  display: inline;
+  border-left: 2px solid black;
+  padding: 0 20px;
+}
+
+#navbar li:hover {
+  border-left: 2px solid #C7ECFF;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+label, select {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type='text']{
+ padding: 10px;
+ margin: 5px;
+ width: 30%;
+ border: 1px solid #C7ECFF;
+ border-radius: 25px;
+ font-size: 13px;font
+}
+
+input[type='submit']{
+ padding: 5px;
+ margin: 5px;
+ width: 10%;
+ border: 1px solid #C7ECFF;
+ border-radius: 25px;
+ display: inline;
+}
+
+input[type='submit']:hover{
+  background-color: #C7ECFF;
+  color:white;
+
+}
+
+select{
+  margin: 10px;
+  width: 30%;
+  border: 1px solid #C7ECFF;
+
+  -webkit-appearance: menulist-button;
+   height: 30px;
+   font-size: 13px;
+}
+
+table {
+  margin: 0 auto 20px;
+  padding: 0 20%;
+
+}
+
+table th {
+  text-align: left;
+  padding: 5px 20px;
+}
+
+h1, h3 {
+  text-align: center;
+  padding: 20px 0 40px 0 ;
+}
+
+a {
+  line-height: 1.6em;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #C7ECFF;
+}
+
+textarea {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #C7ECFF;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.checkboxes {
+  text-align: center;
+  margin: 20px;
+  padding: 0 200px;
+  color: darkgrey;
+}
+
+/* input[type=checkbox] + label {
+
+
+} */
+input[type=checkbox]:checked + label {
+  color: black;
+}
+
+/* .checkboxes label {
+  color: darkgrey;
+}
+
+.checkboxes:checked + label {
+   font-weight: bold;
+} */

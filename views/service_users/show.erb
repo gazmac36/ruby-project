@@ -1,0 +1,52 @@
+<h1><%= @service_user.name %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <td><%= @service_user.name %></a></td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td><%= @service_user.age %></a></td>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <td><%= @service_user.address_line1 %></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td><%= @service_user.address_line2 %></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td><%= @service_user.address_town %></td>
+    </tr>
+  <tr>
+    <th></th>
+    <td><%= @service_user.address_county %></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td><%= @service_user.address_postcode %></td>
+  </tr>
+  <tr>
+    <th>Phone</th>
+    <td><%= @service_user.contact_phone %></td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td><%= @service_user.contact_email %></td>
+  </tr>
+  <tr>
+    <th>Categories</th>
+    <td><%= @categories %></td>
+  </tr>
+</table>
+
+<form class="" action="/service_user/<%= @service_user.id %>/edit" method="get">
+  <input type="submit" name="submit" value="EDIT">
+</form>
+
+<form class="" action="/service_user/<%= @service_user.id %>/check_delete" method="get">
+  <input type="submit" name="submit" value="DELETE">
+</form>

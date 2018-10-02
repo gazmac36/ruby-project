@@ -1,0 +1,9 @@
+<h1>Delete <%= @volunteer.name %>?</h1>
+
+<form class="" action="/volunteer/<%= @volunteer.id %>/delete" method="post">
+  <input type="submit" name="submit" value="Yes">
+</form>
+
+<form class="" action="/volunteer/<%= @volunteer.id %>" method="get">
+  <input type="submit" name="submit" value="No">
+</form>
