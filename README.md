@@ -2,11 +2,11 @@
 
 Goal: Create a web application in Ruby and Sinatra with SQL/Postgres.
 
-###MVP
+### MVP
 
 You have been approached by the volunteer coordinator of a local befriending charity to create a system to match volunteers with service users.
 
-####Users should be able to:
+#### Users should be able to:
 
 - Create a volunteer / service user.
 - View all volunteers / service users.
